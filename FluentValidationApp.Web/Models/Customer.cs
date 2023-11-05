@@ -10,5 +10,7 @@
         public IList<Adress> Adresses { get; set; }
         // Bunu IList olarak tanımlamam sebebi Customer.Adresses[i].Province
         // olarak kullanmak istememiz yani indeksleme yapabilmek için
+
+        public Gender Gender { get; set; }
     }
 }

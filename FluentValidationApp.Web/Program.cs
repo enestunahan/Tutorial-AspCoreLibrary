@@ -1,5 +1,6 @@
 using FluentValidation.AspNetCore;
 using FluentValidationApp.Web.FluentValidators;
+using FluentValidationApp.Web.Mapping;
 using FluentValidationApp.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +24,8 @@ builder.Services.Configure<ApiBehaviorOptions>(opt =>
 {
     opt.SuppressModelStateInvalidFilter = true;
 });
+
+builder.Services.AddAutoMapper(typeof(CustomerProfile));
 
 var app = builder.Build();
 

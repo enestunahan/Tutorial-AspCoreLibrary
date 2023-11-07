@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationApp.Web", "FluentValidationApp.Web\FluentValidationApp.Web.csproj", "{2D8DC828-8EC5-4436-A547-55DEF78F381E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidationApp.Web", "FluentValidationApp.Web\FluentValidationApp.Web.csproj", "{2D8DC828-8EC5-4436-A547-55DEF78F381E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{92CB2293-14CC-4124-A52A-2317B4325786}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

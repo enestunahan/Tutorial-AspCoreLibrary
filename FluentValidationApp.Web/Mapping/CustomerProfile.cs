@@ -8,11 +8,11 @@ namespace FluentValidationApp.Web.Mapping
     {
         public CustomerProfile() 
         {
-            CreateMap<Customer, CustomerDto>();
-            CreateMap<CustomerDto, Customer>();
+            CreateMap<Customer, CustomerDto>()
+                .ForMember(dest => dest.Isim, opt => opt.MapFrom(a => a.Name))
+                .ForMember(dest => dest.Eposta , opt=> opt.MapFrom(a=> a.Email))
+                .ForMember(dest => dest.Yas , opt=> opt.MapFrom(a=> a.Age));
 
-            // Yukarıdaki gibi yazmak yerine bu şekilde de yazabiliyoruz.
-            //CreateMap<Customer, CustomerDto>().ReverseMap();
         }
     }
 }

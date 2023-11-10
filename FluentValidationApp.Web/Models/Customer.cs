@@ -18,5 +18,6 @@ namespace FluentValidationApp.Web.Models
         {
             return string.Concat(Name,"-",Email,"-",Age);
         }
+        public CreditCard CreditCard { get; set; }
     }
 }

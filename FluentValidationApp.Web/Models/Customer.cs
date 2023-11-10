@@ -1,4 +1,6 @@
-﻿namespace FluentValidationApp.Web.Models
+﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
+
+namespace FluentValidationApp.Web.Models
 {
     public class Customer
     {
@@ -12,5 +14,9 @@
         // olarak kullanmak istememiz yani indeksleme yapabilmek için
 
         public Gender Gender { get; set; }
+        public string FullNameDeneme()
+        {
+            return string.Concat(Name,"-",Email,"-",Age);
+        }
     }
 }

@@ -10,8 +10,9 @@ namespace FluentValidationApp.Web.Mapping
         {
             CreateMap<Customer, CustomerDto>()
                 .ForMember(dest => dest.Isim, opt => opt.MapFrom(a => a.Name))
-                .ForMember(dest => dest.Eposta , opt=> opt.MapFrom(a=> a.Email))
-                .ForMember(dest => dest.Yas , opt=> opt.MapFrom(a=> a.Age));
+                .ForMember(dest => dest.Eposta, opt => opt.MapFrom(a => a.Email))
+                .ForMember(dest => dest.Yas, opt => opt.MapFrom(a => a.Age))
+                .ForMember(dest => dest.FullName, opt => opt.MapFrom(a => a.FullNameDeneme()));
 
         }
     }

@@ -26,6 +26,7 @@ builder.Services.Configure<ApiBehaviorOptions>(opt =>
 });
 
 builder.Services.AddAutoMapper(typeof(CustomerProfile));
+builder.Services.AddAutoMapper(typeof(EventDateProfile));
 
 var app = builder.Build();
 
